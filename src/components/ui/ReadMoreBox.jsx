@@ -2,7 +2,7 @@ import Path from "/images/Path.png";
 
 const ReadMoreBox = ({ text, class_name }) => {
   return (
-    <div className={`flex flex-row items-center gap-4  ${class_name}`}>
+    <div className={`flex flex-row items-center gap-4 pb-2 cursor-pointer duration-200 hover:border-b-dark hover:border-b-2 ${class_name}`}>
       <div className="rounded-full border-2 border-primary w-fit h-fit p-3 md:p-2 md:border-opacity-45">
         <img
           src={Path}

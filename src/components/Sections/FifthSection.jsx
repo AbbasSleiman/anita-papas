@@ -7,6 +7,7 @@ const FifthSection = () => {
       <div className="block lg:hidden">
         <img src={Image} alt="image of books" className="w-full"/>
       </div>
+      {/* Info Container for small screen */}
       <div className="space-y-3 lg:hidden">
         <p className="uppercase font-roboto font-medium text-xs pt-3">
           My Bookshelf
@@ -19,6 +20,7 @@ const FifthSection = () => {
           many others as possible.
         </p>
       </div>
+      {/* Info Container for bigger screens */}
       <div className=" w-7/12 hidden lg:block lg:mx-36">
         <div className="flex flex-row gap-4">
           <div className="flex flex-col">

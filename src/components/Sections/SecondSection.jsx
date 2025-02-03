@@ -2,6 +2,7 @@ import ReadMoreBox from "../ui/ReadMoreBox";
 const SecondSection = () => {
   return (
     <section className="px-5 space-y-4 md:px-0 ">
+      {/* Text Container */}
       <div className="md:flex md:flex-row md:items-center">
         <hr className="hidden border border-primary border-opacity-35 w-full md:block" />
         <div className="md:text-box md:flex md:flex-col md:px-12">

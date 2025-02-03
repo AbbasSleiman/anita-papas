@@ -22,7 +22,9 @@
 }
 
 @layer base {
-
+  body{
+    overflow-x: hidden;
+  }
 
 }
 
@@ -45,4 +47,5 @@
     border: solid black 1px;
     height: 100%;
   }
+
 }

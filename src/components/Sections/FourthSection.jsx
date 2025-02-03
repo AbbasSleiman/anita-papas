@@ -17,7 +17,6 @@ const FourthSection = () => {
       </div>
 
       {/*Outer Image Container for Bigger devices*/}
-
       <div className="border border-primary border-opacity-45 hidden md:block md:w-96">
         <div className="relative top-10 left-8 ">
           <img
@@ -28,6 +27,7 @@ const FourthSection = () => {
         </div>
       </div>
 
+      {/* Info Container */}
       <div className="sm:w-10/12 p-2 lg:w-6/12">
         <InfoContainer
           title={"Manifest Together"}

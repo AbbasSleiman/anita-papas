@@ -6,6 +6,7 @@ import { useState } from "react";
 const FirstSection = () => {
   const [isBoxOpened, setIsBoxOpened] = useState(false);
 
+  // toggle function to switch the state
   const toggleBox = () => {
     setIsBoxOpened((prev) => !prev);
   };

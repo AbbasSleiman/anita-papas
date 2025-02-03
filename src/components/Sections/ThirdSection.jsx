@@ -10,6 +10,7 @@ const ThirdSection = () => {
         <img src={Image} alt="image of a room" />
       </div>
 
+      {/* Outer Info Container */}
       <div className="space-y-4 border-t-8 border-dark bg-secondary w-11/12 relative bottom-10 md:border-t-0 md:border-l-8 md:flex md:flex-row md:p-4 md:relative md:left-24 md:top-1 xl:w-4/12 ">
         <InfoContainer
           title={"Step Into Positivity"}
@@ -23,6 +24,7 @@ const ThirdSection = () => {
           }
         />
       </div>
+      {/* Image Container for bigger screens */}
       <div className="hidden md:block md:h-full md:w-8/12 xl:w-8/12">
         <img
           src={Image}

@@ -9,7 +9,7 @@ import BooksSlider from "./BooksSlider";
 
 const HomePage = () => {
   return (
-    <main className="space-y-14 md:space-y-24 lg:space-y-48">
+    <main className="space-y-14 md:space-y-24 lg:space-y-48 w-screen">
       <FirstSection />
       <SecondSection />
       <ThirdSection />
