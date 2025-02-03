@@ -3,167 +3,46 @@
 @import "tailwindcss/utilities";
 
 @font-face {
-  font-family: "Carme";
-  src: url("../assets/fonts/Carme-Regular.ttf") format("truetype");
+  font-family: "Prata";
+  src: url("../assets/fonts/Prata-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Nunito";
-  src: url("../assets/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
-  font-family: "Century";
-  src: url("../assets/fonts/centurygothic.ttf") format("truetype");
+  font-family: "Tenor";
+  src: url("../assets/fonts/TenorSans-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "CenturyBold";
-  src: url("../assets/fonts/centurygothic_bold.ttf") format("truetype");
-  font-weight: 700;
   font-style: normal;
 }
 
 @layer base {
-  body {
-    overflow-x: hidden;
-    /* background-color: #fafafa; */
-  }
 
-  hr{
-    @apply w-full;
-  }
-
-  /*Form elements Styling*/
-  input::placeholder, textarea::placeholder {
-    font-family: Century;
-    font-size: 12px;
-    padding: none;
-  }
-  input[type="text"],
-  input[type="email"],
-  input[type="password"], 
-  textarea {
-    @apply border border-gray-600 w-full py-2 px-4 h-12;
-  }
-  input:focus {
-    outline: 1px solid black;
-  }
-
-  select{
-    @apply w-full
-  }
 
 }
 
 @layer components {
-  /*Buttons Styles*/
-  .btn-primary {
-    @apply bg-primary text-secondary py-2 px-4 duration-200 h-12 font-century;
-  }
-  .btn-primary:hover {
-    @apply bg-accent text-secondary;
+  /*Image Container */
+  .image-container{
+    background-image: url("../../images/Image\ Author.png")
   }
 
-  .select-borders{
-    @apply flex flex-row gap-2 items-center justify-center text-primary border border-primary duration-200 h-8 w-48 font-century text-xs md:h-10 cursor-pointer;
-  }
-  .select-borders:hover{
-    @apply  border-accent text-accent;
-  }
-
-  .btn-utility {
-    @apply bg-primary text-secondary py-2 px-4;
-  }
-
-  .btn-text {
-    @apply text-primary w-fit duration-300 font-semibold;
-    font-family: Carme;
-    letter-spacing: 1px;
-  }
-  .btn-text:hover {
-    @apply text-accent;
-  }
-
-  /*Link Style + underline effect*/
-  .text-link.text-animation-line {
-    position: relative;
-
-    transition-duration: 200ms;
-  }
-  .text-animation-line:hover {
-    @apply text-accent;
-  }
-  .text-animation-line::after {
-    content: "";
-    height: 2px;
-    width: 0;
-
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    transition: width 0.2s;
-    @apply bg-accent;
-  }
-  .text-animation-line:hover::after {
-    width: 100%;
-  }
-
-  /*item Image Style*/
-  .item-image-box {
-    width: 29.297vw;
-    height: 29.297vw;
+  .text-box{
+    width: 160rem;
+    height: fit-content;
   }
 }
 
+ 
 @layer utilities {
-  /*Scolling navbar Style*/
-  .scrolled {
-    position: fixed;
-    top: 0;
-
-    width: 100%;
-  }
-  /*Hr Style*/
-  .seperating-line {
-    @apply w-full border-gray-400;
-  }
-
-  /*Footer links Style*/
-  .footer-link {
-    @apply duration-200 hover:underline text-primary;
-  }
-  .title-list {
-    font-size: 20px;
-    font-weight: 400;
-    @apply text-primary;
-  }
-
-  /*Error styles*/
-  .error{
-    @apply border border-danger text-danger;
-  }
-
-  /*Time Box Elements Style*/
-  .time-box{
-    @apply grid grid-cols-3 border border-gray-600 gap-4 w-full h-fit p-4 lg:grid-cols-4 ;
-  }
-  .time-box .box-element{
-    @apply flex flex-col justify-center border border-gray-400 px-2 h-20 text-center hover:bg-gray-100 xl:px-8 cursor-pointer ;
-  
-  }
-  .box-element.active{
-    background: #006edc;
-    color: #fff;
-   
-  }
-  .box-element.active:hover{
-    background: #0380fc;
-    color: #fff;
+  .vertical-line{
+    rotate: (90deg);
+    border: solid black 1px;
+    height: 100%;
   }
 }

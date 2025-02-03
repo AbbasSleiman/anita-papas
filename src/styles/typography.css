@@ -3,40 +3,26 @@
 @tailwind utilities;
 
 /* Typography Styles*/
-h1,
-h2,
-h3,
-h4, 
-h5,
-p {
-  @apply font-nunito;
+h1,h2,h3,li,p, a{
+  @apply font-tenor 
 }
 h1 {
-  @apply text-primary uppercase;
+  @apply text-xl sm:text-2xl md:text-2xl xl:text-4xl;
 }
 h2 {
-  @apply text-primary font-normal text-3xl uppercase;
+  font-size: 32px;
+  /* @apply text-4xl sm:text-xl md:text-3xl lg:text-4xl; */
 }
-h3 {
-  @apply text-primary text-2xl font-normal uppercase;
+h3{
+  font-size: 26px;
 }
-h4 {
-  @apply text-primary text-base font-semibold;
+h4{
+  font-family: Prata;
+  font-size: 14px;
 }
-h5 {
-  @apply text-primary text-xs font-semibold uppercase tracking-wider ;
+p{
+  color: #303030;
 }
-p {
-  @apply text-sm leading-8 sm:text-base sm:leading-8 opacity-65;
+.utility-text{
+  @apply font-roboto font-normal text-sm
 }
-span, label{
-  @apply text-xs font-light font-carme;
-}
-label{
-  @apply uppercase
-}
-a {
-  text-decoration: none;
-  @apply text-xs font-century
-}
-
