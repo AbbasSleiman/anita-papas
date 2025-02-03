@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography Styles*/
+h1,
+h2,
+h3,
+h4, 
+h5,
+p {
+  @apply font-nunito;
+}
+h1 {
+  @apply text-primary uppercase;
+}
+h2 {
+  @apply text-primary font-normal text-3xl uppercase;
+}
+h3 {
+  @apply text-primary text-2xl font-normal uppercase;
+}
+h4 {
+  @apply text-primary text-base font-semibold;
+}
+h5 {
+  @apply text-primary text-xs font-semibold uppercase tracking-wider ;
+}
+p {
+  @apply text-sm leading-8 sm:text-base sm:leading-8 opacity-65;
+}
+span, label{
+  @apply text-xs font-light font-carme;
+}
+label{
+  @apply uppercase
+}
+a {
+  text-decoration: none;
+  @apply text-xs font-century
+}
+
